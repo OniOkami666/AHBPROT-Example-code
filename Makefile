@@ -13,7 +13,7 @@ CFLAGS   = -O2 -Wall $(MACHDEP) -Iinclude -I$(DEVKITPRO)/libogc/include
 # Linker flags (Cleaned: relies directly on libogc paths)
 LDFLAGS  = -g $(MACHDEP) -L$(DEVKITPRO)/libogc/lib/wii -lwiiuse -lbte -logc -lm
 
-# Object files built from your src/ directory layout
+# Object files built from src/ directory layout
 OBJS     = $(BUILD)/main.o $(BUILD)/ahbprot.o
 
 all: $(BUILD)/$(TARGET).dol
